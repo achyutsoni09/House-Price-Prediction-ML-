@@ -6,14 +6,14 @@ import time
 from sklearn.datasets import fetch_california_housing
 from sklearn.ensemble import RandomForestRegressor
 st.title('🏠 House Price prediction using ML')
-st.image('https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUydGNmeWR2bng1b2E1MDdidjFjdHc4YzUzZXM5NDFhOXU3ODFseHI2MCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1SldY1L9sEDUQ/200w.gif')
+st.image('https://i.pinimg.com/originals/7f/11/ea/7f11ea2554b0c79163a5fd2c3e77e61c.gif')
 
 df = pd.read_csv('house_data.csv')
 X = df.iloc[:,:-3]
 y = df.iloc[:,-1]
 
 st.sidebar.title('🏠 Select House features')
-st.sidebar.image('https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUydGNmeWR2bng1b2E1MDdidjFjdHc4YzUzZXM5NDFhOXU3ODFseHI2MCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1SldY1L9sEDUQ/200w.gif')
+st.sidebar.image('https://i.pinimg.com/originals/7f/11/ea/7f11ea2554b0c79163a5fd2c3e77e61c.gif')
 all_value = []
 for i in X:
   min_value = int(X[i].min())
@@ -42,6 +42,7 @@ msg = f'''House price is: $ {round(house_price*100000,2)}'''
 st.success(msg)
 
 st.markdown('''*Design and Developed by: Achyut Soni*''')
+
 
 
 
